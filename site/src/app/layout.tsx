@@ -11,12 +11,14 @@ import AppProvider from '../component/AppProvider/AppProvider';
 import { createServerSideTrpcCaller } from '../trpc';
 import { headers } from 'next/headers';
 
-import { Roboto } from 'next/font/google';
+import localFont from 'next/font/local';
 
-const roboto = Roboto({
-  subsets: ['latin'],
+const roboto = localFont({
+  src: [
+    { path: '../fonts/roboto/Roboto-Variable.ttf', weight: '100 900', style: 'normal' },
+    { path: '../fonts/roboto/Roboto-Italic-Variable.ttf', weight: '100 900', style: 'italic' },
+  ],
   variable: '--font-roboto',
-  style: ['normal', 'italic'],
   display: 'swap',
 });
 

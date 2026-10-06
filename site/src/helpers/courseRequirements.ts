@@ -32,6 +32,8 @@ export const LOADING_COURSE_PLACEHOLDER: CourseGQLData = {
   },
   prerequisiteText: '',
   repeatability: '',
+  repeatabilityTimes: null,
+  repeatabilityType: null,
   gradingOption: '',
   concurrent: '',
   sameAs: '',
